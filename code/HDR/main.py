@@ -24,4 +24,16 @@ class ACL:
         "初始化资源"
         print("")
         ret  = acl.init()
-        
+        ret = acl.rt.set_device(self.device_id) 
+        utils.check_ret("acl.rt.set_device", ret)
+
+        self.context, ret = acl.rt.create_context(self.device_id) # 创建context
+        utils.check_ret("acl.rt.create_context", ret)
+
+        self.stream, ret = acl.rt.create_stream() # 创建stream
+        utils.check_ret("acl.rt.create_stream", ret)
+
+        self.run_mode, ret = acl.rt.get_run_mode() # 获取运行模式
+        utils.check_ret("acl.rt.get_run_mode", ret)
+
+        print("Init resource success")
