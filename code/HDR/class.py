@@ -21,7 +21,6 @@ class Net:
      # 创建输出数据集
      self.output_dataset, self.output_data = self.prepare_dataset('output')
      
-     op//op.o0/o00
 
   
         
