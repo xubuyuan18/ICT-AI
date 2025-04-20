@@ -16,12 +16,12 @@ class Net:
      ret = acl.mdl.get_desc(self.model_desc, self.model_id)
 
      # step3：创建输入输出数据集
-     # 创建输入数据集
+     # 创建输入数据集x
      self.input_dataset, self.input_data = self.prepare_dataset('input')
      # 创建输出数据集
      self.output_dataset, self.output_data = self.prepare_dataset('output')
      
-     
+     op//op.o0/o00
 
   
         
