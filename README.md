@@ -58,6 +58,8 @@ acl+接口类别缩写+操作动词+对象
 |Profiling|   prof|    表示Profiling配置类接口|
 
 
-'说明'
+###### 说明
 缩写原则上不超过4个字母。
-在接口命名中，如果类别与操作对象重叠时，操作动词后的对象将省略。如：acl.mdl.load_from_file_with_mem，表示model类接口，这个接口表示含义是load model from file，因此在接口命名中Load后面mdl将被省略。
+在接口命名中，如果类别与操作对象重叠时，操作动词后的对象将省略。
+如:```acl.mdl.load_from_file_with_mem```表示model类接口，
+这个接口表示含义是load model from file，因此在接口命名中Load后面mdl将被省略。
